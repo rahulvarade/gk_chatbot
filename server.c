@@ -122,7 +122,6 @@ char* getOutput(char *str){
 		}
 	}
 	printf("\npercentage of que match :   %d\n",r.per);
-	//printf("\n%s",ans);
 	if(r.per>80)
 	return r.ans;
 	return "Sry Ans not found "	;
@@ -160,8 +159,6 @@ int main(){
 			bzero(nbuff,256);			
 			while ((n = recv(in, buff, 256,0)) > 0)  {
 				ans=NULL;
-				//printf("Que from Client: %s\n",buff);
-				//printf("According to me  : ");
 				bzero(nbuff,256);
 				char *nbuff=getOutput(buff);
     			send(in,nbuff,strlen(nbuff),0);	
