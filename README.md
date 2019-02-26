@@ -2,7 +2,7 @@
 This project demonstrates how to use concept of socket programming to develop simple chatbot. When client-user asks question to server, server program identifies question and answer corresponding to that question will be replied to client-user. Client-user can send multiple questions.
 ## Getting Started
 ### Change the path of gk_qna.txt file in server file.
-f=fopen (<file path>,"r");
+f=fopen ("file path","r");
 
 ### Compile and run server.c file.
 1) gcc server.c
